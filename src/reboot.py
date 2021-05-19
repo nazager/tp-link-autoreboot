@@ -14,7 +14,7 @@ password = 'admin'
 url_template = 'http://{}/userRpm/SysRebootRpm.htm?Reboot=Reboot'
 
 class Reboot(SMWinservice):
-    _svc_name_ = 'TP-LINK Auto-reboot'
+    _svc_name_ = 'TP-LINK-Auto-reboot'
     _svc_display_name_ = 'TP-LINK Auto-reboot'
     _svc_description_ = 'Reboot router/AP when there are not internet connection'
 
