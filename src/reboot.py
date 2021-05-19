@@ -11,13 +11,15 @@ class Reboot(SMWinservice):
     _svc_description_ = 'Reboot router/AP when there are not internet connection'
 
     def __init__(self, args):
-        pass
+        super().__init__(args)
+        self.isRunning = False
 
     def start(self):
-        pass
+        self.isRunning = False
 
     def stop(self):
-        pass
+        self.isRunning = True
+
     
     def checkConnection():
         pass
